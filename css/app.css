@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Noto Sans HK', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8))), url(../img/hero.jpg) no-repeat 50% 50%/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../img/hero.jpg) no-repeat 50% 50%/cover;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.title h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 20px;
+  font-weight: 300;
+  color: whitesmoke;
+}
+
+.title p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.menu-strip {
+  background: #fff;
+  position: fixed;
+  width: 10%;
+  height: 100vh;
+}
+
+.menu-strip .toggle-btn {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.menu-strip .toggle-btn ion-icon {
+  font-size: 28px;
+  color: #a66f2c;
+}
+
+.menu .images {
+  position: absolute;
+  width: 0%;
+  height: 100vh;
+  left: 55%;
+  background: url(../img/art-color-colourful.jpg) no-repeat 50% 50%/cover;
+}
+
+.menu .bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu .bg1 {
+  display: block;
+  background: url(../img/abstract-painting-art-colorful.jpg) no-repeat 50% 50%/cover;
+}
+
+.menu .bg2 {
+  display: block;
+  background: url(../img/abstract-painting-acrylic.jpg) no-repeat 50% 50%/cover;
+}
+
+.menu .bg3 {
+  display: block;
+  background: url(../img/art-materials-artistic.jpg) no-repeat 50% 50%/cover;
+}
+
+.menu .bg4 {
+  display: block;
+  background: url(../img/architecture-art.jpg) no-repeat 50% 50%/cover;
+}
+
+.menu .bg5 {
+  display: block;
+  background: url(../img/art-color-colourful.jpg) no-repeat 50% 50%/cover;
+}
+
+.menu .hide {
+  display: none;
+}
+
+nav .menu {
+  position: absolute;
+  width: 0%;
+  height: 100vh;
+  left: 10%;
+  background: whitesmoke;
+}
+
+nav .menu #order {
+  font-size: 16px;
+  font-weight: lighter;
+  color: #afafaf;
+}
+
+nav .menu #menu {
+  background: -webkit-gradient(linear, left top, left bottom, from(#5b5b5b), to(#5b5b5b)) left no-repeat, #afafaf;
+  background: linear-gradient(#5b5b5b, #5b5b5b) left no-repeat, #afafaf;
+  background-size: 0% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+nav .menu #menu:hover {
+  background-size: 100% 100%;
+}
+
+nav .menu #tag {
+  font-size: 18px;
+  font-weight: lighter;
+  color: #afafaf;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .menu ul {
+  list-style: none;
+  position: absolute;
+  top: 36%;
+  left: 36%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+nav .menu ul li {
+  color: #594637;
+  font-weight: lighter;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+nav .menu ul li:hover #tag {
+  color: #a66f2c;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.media {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.media ul li {
+  display: inline-block;
+  list-style: none;
+  color: #afafaf;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    left: 60%;
+  }
+  .title h1 {
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 6px;
+  }
+  .images {
+    display: none;
+  }
+  .nav .menu {
+    width: 0%;
+    left: 20%;
+  }
+  .menu ul {
+    margin-top: 80px;
+    margin-left: -20px;
+  }
+  .menu-strip {
+    width: 20%;
+  }
+  .toggle-btn {
+    position: absolute;
+    -webkit-transform: translate(-50%, -90%);
+            transform: translate(-50%, -90%);
+  }
+  .menu li #menu {
+    font-size: 18px;
+  }
+  #tag, #order, #media {
+    display: none;
+  }
+}
+/*# sourceMappingURL=app.css.map */
